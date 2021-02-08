@@ -1,0 +1,10 @@
+POST http://localhost:5000/teachers/add
+Content-Type: application/json
+
+{
+    "staffNo":"staff001",
+    "teacherName":"Mr Agoro",
+    "levels":"level 7",
+    "classHeld":"JSS 3" 
+}
+

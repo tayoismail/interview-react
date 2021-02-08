@@ -3,9 +3,10 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const studentSchema = new Schema({
-    studentno : {type: String, required: true},
-    firstname: {type: String, required: true},
-    lastname: {type: String, required: true},
+    teacherName: {type: String, required: true, unique: true},
+    studentNo : {type: String, required: true},
+    firstName: {type: String, required: true},
+    lastName: {type: String, required: true},
     class: {type: String, required: true}
 }, {
     timestamps: true,

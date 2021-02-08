@@ -10,9 +10,10 @@ router.route('/').get((req, res) => {
 
 router.route('/add').post((req, res) => {
     const newStudent = new Student({
-        studentno: req.body.studentno,
-        firstname: req.body.firstname,
-        lastname: req.body.lastname,        
+        teacherName: req.body.teacherName,
+        studentNo: req.body.studentNo,
+        firstName: req.body.firstName,
+        lastName: req.body.lastName,        
         class: req.body.class,
 
     })
